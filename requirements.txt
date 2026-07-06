@@ -1,10 +1,12 @@
 jupyterlab
+ipykernel
 pandas
 numpy
 scikit-learn
 matplotlib
 seaborn
 sqlalchemy
+pymysql
 mysql-connector-python
 openpyxl
-ipykernel
+python-docx

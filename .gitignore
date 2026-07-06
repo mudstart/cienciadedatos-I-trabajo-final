@@ -1,17 +1,58 @@
-# Entorno virtual
+# ============================================================
+#  .gitignore — Proyecto Final OULAD (Ciencia de Datos I)
+# ============================================================
+
+# --- Entornos virtuales ---
 .venv/
 venv/
+env/
+ENV/
 
-# Credenciales
-src/config.py
 
-# Jupyter
+sql
+
+# --- Jupyter: checkpoints autogenerados (en cualquier carpeta) ---
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*-checkpoint.ipynb
+*-checkpoint.py
+*-checkpoint.csv
+*-checkpoint.json
+*-checkpoint.png
+
+# --- Notebooks de prueba sin nombre ---
+Untitled*.ipynb
+
+# --- Caché y bytecode de Python ---
 __pycache__/
-*.pyc
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints
 
-# Archivos del sistema
-.DS_Store
+# --- Bases de datos locales y dumps de prueba ---
+*.sqlite
+*.sqlite3
+*.db
 
-# Outputs grandes
+# --- Datos crudos grandes (no se versionan) ---
 data/raw/
+
+# --- Editores / IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- Archivos del sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Node (solo si se generan documentos con docx-js) ---
+node_modules/
+
+# --- Archivos temporales ---
+probe_test.txt
+*.tmp
+*.log

@@ -1,0 +1,427 @@
+{
+  "eda": {
+    "n_filas": 32593,
+    "distribucion_final_result": {
+      "Withdrawn": 10156,
+      "Pass": 12361,
+      "Fail": 7052,
+      "Distinction": 3024
+    },
+    "missing_imputados": {
+      "date_registration": 45,
+      "vle_total_clics": 3365,
+      "vle_interacciones": 3365,
+      "vle_sitios": 3365
+    },
+    "describe": {
+      "num_of_prev_attempts": {
+        "count": 32593.0,
+        "mean": 0.1632,
+        "std": 0.4798,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 6.0
+      },
+      "studied_credits": {
+        "count": 32593.0,
+        "mean": 79.7587,
+        "std": 41.0719,
+        "min": 30.0,
+        "25%": 60.0,
+        "50%": 60.0,
+        "75%": 120.0,
+        "max": 655.0
+      },
+      "date_registration": {
+        "count": 32593.0,
+        "mean": -69.3942,
+        "std": 49.2287,
+        "min": -322.0,
+        "25%": -100.0,
+        "50%": -57.0,
+        "75%": -29.0,
+        "max": 167.0
+      },
+      "imd_ord": {
+        "count": 32593.0,
+        "mean": 4.0227,
+        "std": 3.076,
+        "min": -1.0,
+        "25%": 2.0,
+        "50%": 4.0,
+        "75%": 7.0,
+        "max": 9.0
+      },
+      "age_ord": {
+        "count": 32593.0,
+        "mean": 0.3027,
+        "std": 0.4736,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1.0,
+        "max": 2.0
+      },
+      "vle_total_clics": {
+        "count": 32593.0,
+        "mean": 811.9742,
+        "std": 1104.0073,
+        "min": 0.0,
+        "25%": 99.0,
+        "50%": 420.0,
+        "75%": 1066.0,
+        "max": 13625.0
+      },
+      "vle_interacciones": {
+        "count": 32593.0,
+        "mean": 259.5441,
+        "std": 296.5463,
+        "min": 0.0,
+        "25%": 42.0,
+        "50%": 158.0,
+        "75%": 372.0,
+        "max": 2567.0
+      },
+      "vle_sitios": {
+        "count": 32593.0,
+        "mean": 60.1508,
+        "std": 55.8986,
+        "min": 0.0,
+        "25%": 19.0,
+        "50%": 46.0,
+        "75%": 86.0,
+        "max": 413.0
+      },
+      "target_bin": {
+        "count": 32593.0,
+        "mean": 0.472,
+        "std": 0.4992,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1.0,
+        "max": 1.0
+      },
+      "target_ord": {
+        "count": 32593.0,
+        "mean": 1.2532,
+        "std": 0.9989,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 1.0,
+        "75%": 2.0,
+        "max": 3.0
+      },
+      "score_medio": {
+        "count": 25820.0,
+        "mean": 72.7683,
+        "std": 16.375,
+        "min": 0.0,
+        "25%": 64.6667,
+        "50%": 76.0,
+        "75%": 84.5455,
+        "max": 100.0
+      }
+    },
+    "kurtosis": {
+      "num_of_prev_attempts": 19.4318,
+      "studied_credits": 7.7379,
+      "date_registration": 1.0081,
+      "imd_ord": -1.0491,
+      "age_ord": -0.4293,
+      "vle_total_clics": 11.9376,
+      "vle_interacciones": 4.4192,
+      "vle_sitios": 1.9198,
+      "target_bin": -1.9876,
+      "target_ord": -1.2412,
+      "score_medio": 2.3407
+    },
+    "skew": {
+      "num_of_prev_attempts": 3.8077,
+      "studied_credits": 1.8758,
+      "date_registration": -1.01,
+      "imd_ord": -0.1119,
+      "age_ord": 1.0451,
+      "vle_total_clics": 2.809,
+      "vle_interacciones": 1.8677,
+      "vle_sitios": 1.3698,
+      "target_bin": 0.112,
+      "target_ord": 0.0358,
+      "score_medio": -1.265
+    }
+  },
+  "resultados": {
+    "clasificacion_binario": {
+      "metricas": {
+        "logistic_regression": {
+          "precision_macro": 0.796387041021041,
+          "recall_macro": 0.7901720408121092,
+          "f1_macro": 0.7912750318570659,
+          "accuracy": 0.7935943060498221,
+          "roc_auc": 0.8844350570164197,
+          "f1_manual": {
+            "TP": 2804,
+            "FP": 639,
+            "TN": 3663,
+            "FN": 1043,
+            "precision": 0.8144,
+            "recall": 0.7289,
+            "f1_score": 0.7693
+          },
+          "mse": 0.20640569395017794,
+          "r2": 0.17179525014027341
+        },
+        "random_forest": {
+          "precision_macro": 0.8171908761653937,
+          "recall_macro": 0.8181319960840601,
+          "f1_macro": 0.816701834155741,
+          "accuracy": 0.8167873358694319,
+          "roc_auc": 0.8989298597916083,
+          "f1_manual": {
+            "TP": 3240,
+            "FP": 886,
+            "TN": 3416,
+            "FN": 607,
+            "precision": 0.7853,
+            "recall": 0.8422,
+            "f1_score": 0.8127
+          },
+          "mse": 0.18321266413056816,
+          "r2": 0.26485749611143183
+        },
+        "gradient_boosting": {
+          "precision_macro": 0.8195181679135375,
+          "recall_macro": 0.8203627489260592,
+          "f1_macro": 0.8186987733184597,
+          "accuracy": 0.8187507669652718,
+          "roc_auc": 0.8997363955104215,
+          "f1_manual": {
+            "TP": 3267,
+            "FP": 897,
+            "TN": 3405,
+            "FN": 580,
+            "precision": 0.7846,
+            "recall": 0.8492,
+            "f1_score": 0.8156
+          },
+          "mse": 0.18124923303472817,
+          "r2": 0.2727357814846515
+        }
+      },
+      "mejor": "gradient_boosting",
+      "importancias": {
+        "num_of_prev_attempts": 0.003773344676718312,
+        "studied_credits": 0.04555451809853728,
+        "date_registration": 0.0019200098746325234,
+        "imd_ord": 0.007089316038216661,
+        "age_ord": 0.0011646523526647938,
+        "vle_total_clics": 0.0494924369356722,
+        "vle_interacciones": 0.7733417556157312,
+        "vle_sitios": 0.05365990113780565,
+        "gender_M": 0.043457862745200644,
+        "region_East Midlands Region": 0.00010387729496946369,
+        "region_Ireland": 0.0005189613793177114,
+        "region_London Region": 0.00015566836187015792,
+        "region_North Region": 5.167154087096669e-05,
+        "region_North Western Region": 0.0009326973175816932,
+        "region_Scotland": 0.0007474119197652028,
+        "region_South East Region": 0.0006414964978950192,
+        "region_South Region": 2.7910567662365084e-05,
+        "region_South West Region": 0.00025470916736386316,
+        "region_Wales": 3.5519540800943507e-05,
+        "region_West Midlands Region": 6.251373452756277e-05,
+        "region_Yorkshire Region": 8.989282345375826e-05,
+        "highest_education_HE Qualification": 2.3052510142296565e-05,
+        "highest_education_Lower Than A Level": 0.014195101763756036,
+        "highest_education_No Formal quals": 0.00046031573323106016,
+        "highest_education_Post Graduate Qualification": 5.780150218658255e-05,
+        "disability_Y": 0.002187600869426001
+      },
+      "n_train": 24444,
+      "n_test": 8149
+    },
+    "clasificacion_ordinal": {
+      "metricas": {
+        "logistic_regression": {
+          "precision_macro": 0.5382109502399246,
+          "recall_macro": 0.44972012498737,
+          "f1_macro": 0.41863195689996713,
+          "accuracy": 0.594428764265554,
+          "roc_auc": NaN
+        },
+        "random_forest": {
+          "precision_macro": 0.5821504098918528,
+          "recall_macro": 0.47239388017283646,
+          "f1_macro": 0.46152446431816846,
+          "accuracy": 0.6093999263713339,
+          "roc_auc": NaN
+        },
+        "gradient_boosting": {
+          "precision_macro": 0.5770920872988231,
+          "recall_macro": 0.4647790490608661,
+          "f1_macro": 0.446436560739217,
+          "accuracy": 0.6096453552583139,
+          "roc_auc": NaN
+        }
+      },
+      "mejor": "random_forest",
+      "importancias": {
+        "num_of_prev_attempts": 0.01535244590924788,
+        "studied_credits": 0.051360812441002344,
+        "date_registration": 0.12017542403626906,
+        "imd_ord": 0.07138772321446323,
+        "age_ord": 0.01994822299964761,
+        "vle_total_clics": 0.19667143712454227,
+        "vle_interacciones": 0.19682153779522818,
+        "vle_sitios": 0.1497747009978515,
+        "gender_M": 0.021539730224792258,
+        "region_East Midlands Region": 0.009756928663397207,
+        "region_Ireland": 0.006615348518558498,
+        "region_London Region": 0.01110671595945893,
+        "region_North Region": 0.007567252483508622,
+        "region_North Western Region": 0.010333268096315783,
+        "region_Scotland": 0.011611052037737695,
+        "region_South East Region": 0.008946486794481515,
+        "region_South Region": 0.010883642089454911,
+        "region_South West Region": 0.009855627397739338,
+        "region_Wales": 0.009607611822728948,
+        "region_West Midlands Region": 0.01003196081056164,
+        "region_Yorkshire Region": 0.008585147282926364,
+        "highest_education_HE Qualification": 0.010947636693998496,
+        "highest_education_Lower Than A Level": 0.01487509371829285,
+        "highest_education_No Formal quals": 0.00240213653165334,
+        "highest_education_Post Graduate Qualification": 0.0023275343241557812,
+        "disability_Y": 0.011514522031985552
+      },
+      "n_train": 24444,
+      "n_test": 8149
+    },
+    "regresion_score": {
+      "metricas": {
+        "linear_regression": {
+          "mse": 236.16117858469545,
+          "rmse": 15.367536516458825,
+          "r2": 0.13015750081274713
+        },
+        "random_forest": {
+          "mse": 228.25596264835374,
+          "rmse": 15.108142263308013,
+          "r2": 0.15927444894068132
+        },
+        "gradient_boosting": {
+          "mse": 218.4261648289575,
+          "rmse": 14.779247776154154,
+          "r2": 0.19548012826939698
+        }
+      },
+      "mejor": "gradient_boosting",
+      "importancias": {
+        "num_of_prev_attempts": 0.01762725368824039,
+        "studied_credits": 0.05752749638692123,
+        "date_registration": 0.03542316912828467,
+        "imd_ord": 0.031640514071373374,
+        "age_ord": 0.0021556171257241293,
+        "vle_total_clics": 0.5099449936946913,
+        "vle_interacciones": 0.1220721865174457,
+        "vle_sitios": 0.09026751307167322,
+        "gender_M": 0.07569377509385807,
+        "region_East Midlands Region": 0.0012729004769691913,
+        "region_Ireland": 0.00016549196214959711,
+        "region_London Region": 0.000625895931322634,
+        "region_North Region": 0.0004836439712309669,
+        "region_North Western Region": 0.00035529504477416283,
+        "region_Scotland": 0.0,
+        "region_South East Region": 0.0025479738108121442,
+        "region_South Region": 0.00026860043710929567,
+        "region_South West Region": 0.0003349819894239183,
+        "region_Wales": 0.0002883733802295424,
+        "region_West Midlands Region": 0.00047550562676935325,
+        "region_Yorkshire Region": 0.0011965240091637705,
+        "highest_education_HE Qualification": 0.002733136518294351,
+        "highest_education_Lower Than A Level": 0.029653809599505303,
+        "highest_education_No Formal quals": 0.00457027864303021,
+        "highest_education_Post Graduate Qualification": 0.007159796582712232,
+        "disability_Y": 0.005515273238291195
+      },
+      "n_train": 19365,
+      "n_test": 6455
+    },
+    "no_supervisado": {
+      "2": {
+        "k": 2,
+        "silhouette": 0.11452233212375362
+      },
+      "3": {
+        "k": 3,
+        "silhouette": 0.08198911994427766
+      },
+      "4": {
+        "k": 4,
+        "silhouette": 0.07584261449946471
+      }
+    },
+    "pi2_kongo": {
+      "metricas": {
+        "logistic_regression": {
+          "precision_macro": 0.9326923076923077,
+          "recall_macro": 0.9782608695652174,
+          "f1_macro": 0.9528064146620847,
+          "accuracy": 0.9660194174757282,
+          "roc_auc": 0.9917184265010351,
+          "f1_manual": {
+            "TP": 45,
+            "FP": 7,
+            "TN": 154,
+            "FN": 0,
+            "precision": 0.8654,
+            "recall": 1.0,
+            "f1_score": 0.9278
+          },
+          "msePI2": 0.03398058252427184,
+          "r2PI2": 0.8009661835748791
+        },
+        "random_forest": {
+          "precision_macro": 0.9411764705882353,
+          "recall_macro": 0.9813664596273293,
+          "f1_macro": 0.959256329113924,
+          "accuracy": 0.970873786407767,
+          "roc_auc": 0.9913043478260869,
+          "f1_manual": {
+            "TP": 45,
+            "FP": 6,
+            "TN": 155,
+            "FN": 0,
+            "precision": 0.8824,
+            "recall": 1.0,
+            "f1_score": 0.9375
+          },
+          "msePI2": 0.02912621359223301,
+          "r2PI2": 0.829399585921325
+        },
+        "gradient_boosting": {
+          "precision_macro": 0.9324060834524892,
+          "recall_macro": 0.959144237405107,
+          "f1_macro": 0.944868192158437,
+          "accuracy": 0.9611650485436893,
+          "roc_auc": 0.9867494824016563,
+          "f1_manual": {
+            "TP": 43,
+            "FP": 6,
+            "TN": 155,
+            "FN": 2,
+            "precision": 0.8776,
+            "recall": 0.9556,
+            "f1_score": 0.9149
+          },
+          "msePI2": 0.038834951456310676,
+          "r2PI2": 0.7725327812284334
+        }
+      },
+      "mejor": "random_forest",
+      "n_train": 616,
+      "n_test": 206
+    }
+  }
+}
